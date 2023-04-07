@@ -1,0 +1,94 @@
+function duplicateScene(){
+    var orange = $('.orange').length;
+    var divs = $('.container > div').length;
+    if(orange == divs && divs == 2){
+        return true;
+    }
+}
+
+function editSecondScene(){
+    var part;
+    var pink = $('.pink').length;
+    var divs = $('.container > div').length;
+    if(pink == 1 && divs == 2){
+        part = 1;
+        var img = $('.pink > img').attr('src');
+        if(img == 'lily.png'){
+            part = 2;
+            var dialouge = $('.pink > p').text();
+            if (dialouge != 'I wish I had the super power of programming.'){
+                part = 3;
+            }
+        }
+    }
+    return part;
+}
+
+function wowScene(){
+    var wow = $(".wow").length;
+    var divs = $('.container  > div').length;
+    if(wow == 1 && divs == 3){
+        return true;
+    }
+}
+
+$.ajax({
+    url:"story.html",
+    async:false,
+    context:"html"
+}).done(function(data){
+    var status = checkForErrors(data);
+    if(status == "no error"){
+        exercises();
+    }else{
+        throwError(status);
+    }
+});
+
+
+function exercises(){
+    var first = duplicateScene();
+    var second = editSecondScene();
+    var third = wowScene();
+
+
+    if(third){
+        var msg = {
+            title: "Congratulations",
+            text: "Your first project is complete, now complete the comic as your homework."
+        }
+        success(msg);
+    } else if(second){
+        if(second == 1){
+            var msg = {
+                title: "Good going!",
+                text: "Notice the change in background color of second scene"
+            }
+            success(msg);
+        }else if(second == 2){
+            var msg = {
+                title: "Great!",
+                text: "You successfully changed the character."
+            }
+            success(msg);
+        }else if(second == 3){
+            var msg = {
+                title: "Awesome!",
+                text: "With this the fourth exercise is complete."
+            }
+            success(msg);
+        }
+    } else if(first){
+        var msg = {
+            title: "Well Done!!",
+            text: "You now have two scenes in your comic."
+        }
+        success(msg)
+    } else {
+        var msg = {
+            title: "Hello there!!",
+            text: "Welcome to world of HTML/CSS. Today we will make a web comic"
+        }
+        success(msg)
+    }
+}

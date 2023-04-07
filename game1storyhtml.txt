@@ -1,0 +1,83 @@
+<html>
+  <head> <title>My Comic</title><link rel="stylesheet" href="story.css" />
+    <link rel="stylesheet"href="//projects.codewizardshq.com/notification/pnotify.css"/></head>
+  <!-- Exercises
+        Exercise 1: Differentiate between code & content in story.html.
+
+        Exercise 2: How many self closing tags can you find in your story.html file ?
+
+        Exercise 3: Add a duplicate scene in the comic.
+
+        Exercise 4: Edit the duplicate scene, added in previous step, as required.
+                    Step 1: Change 'orange' to 'pink' in div tag.
+                    Step 2: Change 'naomi.png' to 'lily.png' in img tag.
+                    Step 3: Change content of p tag to 'Well Naomi, today is your lucky day then'.
+
+        Exercise 5: Create a wow scene in comic.
+        HOMEWORK: Add rest of the scenes here.
+        Take a look at https://projects.codewizardshq.com/i_e22_wd1_01/elements.html
+        to see how each character and background look.
+    -->
+
+  <body>
+    <h1>Superhero talks</h1>
+<div class="container"><div class="orange"><p>I wish I had the super power of programming.</p><img src="images/naomi.png" />
+      </div>
+
+      <div class="blue">
+        <p>Well it is your Lucky Day!</p>
+        <img src="images/blackninja.png" />
+      </div>
+
+      <div class="red">
+        <p>Did somebody say LUCKY !,Its my name</p>
+        <img src="images/lucky.png" />
+      </div>
+      
+      
+      <div class="red">
+        <p>Thats not you !</p>
+        <img src="images/blackninja.png" />
+      </div>
+      
+      <div class="blue">
+        <p>Okay I will go </p>
+        <img src="images/lucky.png" />
+      </div>
+      
+      <div class="blue">
+        <p>Okay the first step is to love coding </p>
+        <img src="images/blackninja.png" />
+      </div>
+      
+      <div class="red">
+        <p>Okay the second step is to learn HTML </p>
+        <img src="images/blackninja.png" />
+      </div>
+      
+      <div class="blue">
+        <p>Okay the THIRD step is to make a website using all I told you </p>
+        <img src="images/blackninja.png" />
+      </div>
+      
+  <div class="orange">
+        <p>I did it I have the power of programing </p>
+        <img src="images/naomi.png" />
+      </div>
+  
+  
+  
+      
+    </div>
+  </body>
+</html>
+
+
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//projects.codewizardshq.com/notification/pnotify.js"></script>
+<script src="//projects.codewizardshq.com/notification/notify.js"></script>
+<script src="//projects.codewizardshq.com/notification/validator.js"></script>
+<script src="notification.js"></script>

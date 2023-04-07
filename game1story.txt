@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Aladin|Bangers');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
+body {
+    background:url("wall.jpg");
+    background-size:cover;
+}
+
+h1 {
+    text-align:center;
+    font-family: 'Bangers', cursive;
+    color:#f2eeb3;
+    font-size:72px;
+    font-weight:normal;
+}
+
+.container { 
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.container > div {
+    width:296px;
+    height:235px;
+    position:relative;
+    display:inline-block;
+    border: 2px solid black;
+    background-size:cover;
+    background-position:center center;
+}
+
+.container > div > img {
+  position:absolute;
+  height:180px;
+  bottom:5px;
+}
+
+.orange{
+  background:url("images/orange.png");
+}
+
+.pink {
+  background:url("images/pink.png")
+}
+
+.blue{
+  background:url("images/blue.png");
+}
+
+.red{
+  background:url('images/red.png');
+}
+
+.green{
+  background:url('images/green.png');
+}
+
+.oops{
+  background:url("images/oops.png"), url('images/blue.png');
+}
+
+.wow{
+  background:url('images/wow.png'), url('images/orange.png');
+}
+
+.bang{
+  background:url('images/bang.png'), url('images/orange.png');
+}
+
+.boom{
+  background:url('images/boom.png'), url('images/pink.png');
+}
+
+.poof{
+  background:url('images/poof.png'), url('images/green.png');
+}
+
+.pow{
+  background:url('images/pow.png'), url('images/red.png');
+}
+
+.wroom{
+  background:url('images/wroom.png'), url('images/green.png');
+}
+
+.kaboom{
+  background:url('images/kaboom.png'), url('images/orange.png');
+}
+
+.boo{
+  background:url('images/boo.png'), url('images/red.png');
+}
+
+p{
+  background-color:white;
+  padding:5px;
+  border-radius:10px;
+  width:130px;
+  margin:10px 10px 0px auto;
+  display:block;
+  font-family: 'Aladin', cursive;
+  line-height:1;
+  font-size:20px;
+  position:relative;
+}
+
+p:before{
+  	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+    bottom:-20px;
+	border-top: 10px solid white;
+}
+
+div:nth-child(2n+1) > p:before{
+    right:15px;
+}
+
+div:nth-child(2n+1)  > p{
+  margin-right:auto;
+  margin-left:10px;
+}
+
+div:nth-child(2n+1) > img{
+  right:0px;
+}
+
+.hljs {
+  font-size: 14px;
+}
